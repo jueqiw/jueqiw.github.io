@@ -1,0 +1,108 @@
+/* =========================================================
+   Jueqi Wang — personal site
+   Clean minimal academic theme
+   ========================================================= */
+
+:root {
+  --bg:        #ffffff;
+  --text:      #222629;
+  --text-soft: #5a6066;
+  --text-faint:#9aa0a6;
+  --rule:      #ececec;
+  --accent:    #2a6fb0;
+  --accent-2:  #1c5286;
+  --maxw:      720px;
+  --sans:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 60px 24px 90px; }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-2); text-decoration: underline; text-underline-offset: 2px; }
+
+/* ---------------- Header ---------------- */
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.header-text { flex: 1 1 320px; min-width: 240px; }
+
+.name {
+  font-size: 1.85rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0 0 6px;
+}
+.affil { color: var(--text-soft); font-size: 0.97rem; line-height: 1.55; }
+.affil .title { color: var(--text); font-weight: 600; }
+.contact { margin-top: 8px; font-size: 0.95rem; color: var(--text-soft); }
+
+.links { margin-top: 12px; font-size: 0.95rem; }
+.links a { margin-right: 4px; }
+.links .dot { color: var(--text-faint); margin: 0 6px; }
+
+.photo {
+  flex: 0 0 auto;
+  width: 130px; height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* ---------------- Section ---------------- */
+hr.divide { border: 0; border-top: 1px solid var(--rule); margin: 34px 0; }
+
+.section { margin-top: 34px; }
+.section-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+.section-title + .rule { border: 0; border-top: 2px solid var(--text); width: 34px; margin: 0 0 18px; }
+
+.intro { color: var(--text); font-size: 1rem; line-height: 1.72; }
+
+/* ---------------- Publications ---------------- */
+.pubs { list-style: none; margin: 0; padding: 0; }
+.pub { padding: 0 0 20px; }
+.pub:last-child { padding-bottom: 0; }
+.pub .t { font-weight: 600; color: var(--text); }
+.pub .note { font-weight: 400; color: var(--accent); font-size: 0.9em; }
+.pub .a { color: var(--text-faint); font-size: 0.95rem; }
+.pub .a .me { color: var(--text); font-weight: 700; }
+.pub .v { color: var(--text-faint); font-size: 0.92rem; }
+.pub .l { font-size: 0.92rem; }
+.pub .l a { font-weight: 500; }
+.pub .l .dot { color: var(--text-faint); margin: 0 5px; }
+
+/* ---------------- Outreach ---------------- */
+.outreach { color: var(--text-soft); font-size: 0.98rem; }
+.outreach .role { color: var(--text); font-weight: 600; }
+
+/* ---------------- Footer ---------------- */
+.footer {
+  margin-top: 48px; padding-top: 18px;
+  border-top: 1px solid var(--rule);
+  color: var(--text-faint); font-size: 0.85rem;
+}
+
+@media (max-width: 520px) {
+  .wrap { padding: 40px 18px 64px; }
+  .photo { width: 104px; height: 128px; }
+}
