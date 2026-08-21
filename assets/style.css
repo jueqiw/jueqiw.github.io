@@ -87,9 +87,23 @@ hr.divide { border: 0; border-top: 1px solid var(--rule); margin: 34px 0; }
 .pub .a { color: var(--text-faint); font-size: 0.95rem; }
 .pub .a .me { color: var(--text); font-weight: 700; }
 .pub .v { color: var(--text-faint); font-size: 0.92rem; }
+.pub .v .badge {
+  display: inline-block;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  padding: 0 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.4;
+  vertical-align: 1px;
+  margin-left: 4px;
+}
 .pub .l { font-size: 0.92rem; }
 .pub .l a { font-weight: 500; }
 .pub .l .dot { color: var(--text-faint); margin: 0 5px; }
+.pub .l .github-button { margin-left: 5px; }
+.pub .l iframe { vertical-align: -5px !important; }
 
 /* ---------------- Outreach ---------------- */
 .outreach { color: var(--text-soft); font-size: 0.98rem; }
